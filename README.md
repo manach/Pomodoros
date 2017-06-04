@@ -8,5 +8,3 @@ setpom.sh: the main file; symlinked to /usr/local/bin/setpom on my machine so th
 simple-pom.sh: the first one, copied from Gabriel Bezerra (who in turn based)
   his version on Philippe Creux's Ruby version).
 user-pom.sh: the first one with user input.
-
-Test changes
