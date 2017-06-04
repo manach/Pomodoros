@@ -13,7 +13,7 @@ echo "How many minutes do you want to work for?"
 
 read pomMinutes
 
-echo "How long do you want your break to be? CHANGED VIA SYMLINK"
+echo "How long do you want your break to be?"
 
 read breakMinutes
 
@@ -22,7 +22,7 @@ aplay /usr/share/sounds/alsa/boxingBell.wav
 echo 'Go go go!'
 notify-send -i face-cool 'Go go go!'
 
-for i in $(seq "$pomMinutes" -1 1); do
+for i in $(seq "${pomMinutes}" -1 1); do
   echo $i
   sleep 1m
 done
@@ -31,7 +31,7 @@ notify-send -i face-cool -t 0 'End of Pomodoro!'
 aplay /usr/share/sounds/alsa/meditationBell.wav
 echo 'End of Pomodoro! Beginning break.'
 
-for i in $(seq "$breakMinutes" -1 1); do
+for i in $(seq "${breakMinutes}" -1 1); do
   echo $i
   sleep 1m
 done
